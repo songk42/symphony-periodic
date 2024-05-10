@@ -1,20 +1,13 @@
-## Symphony: Symmetry-Equivariant Point-Centered Spherical Harmonics for Molecule Generation
-
-![A high-level overview of Symphony.](cover.png)
-
-This is the official code-release for the paper [Symphony: Symmetry-Equivariant Point-Centered Spherical Harmonics for Molecule Generation](https://openreview.net/forum?id=MIEnYtlGyv), published at ICLR 2024.
+## Symphony: Symmetry-Equivariant Point-Centered Spherical Harmonics for Periodic Structure Generation
 
 ### Instructions
 
 Clone the repository:
 
 ```shell
-git clone git@github.com:atomicarchitects/symphony.git
+git clone git@github.com:songk/symphony.git
 cd symphony
-git checkout iclr_2024_final
 ```
-
-Since this repository is actively being developed, we recommend using the `iclr_2024_final` branch for the most stable version of the code.
 
 #### Default Setup
 Create and activate a virtual environment:
@@ -51,7 +44,7 @@ under `configs/`:
 
 ```shell
 python -m symphony \
-    --config configs/qm9/e3schnet_and_nequip.py \
+    --config configs/perov5/e3schnet_and_nequip.py \
     --workdir ./workdirs
 ```
 
@@ -67,23 +60,13 @@ For example, to change the number of training
 steps, and the batch size:
 
 ```shell
-python -m symphony --config configs/qm9/e3schnet_and_nequip.py \
+python -m symphony --config configs/perov5/e3schnet_and_nequip.py \
     --workdir ./workdirs \
     --config.num_train_steps=10 --config.max_n_graphs=16
 ```
 
 For more extensive changes, directly edit the configuration files,
 or add your own.
-
-
-## Citation
-
-Please cite our paper if you use this code!
-
-```bibtex
-@inproceedings{
-    daigavane2024symphony,
-    title={Symphony: Symmetry-Equivariant Point-Centered Spherical Harmonics for Molecule Generation},
     author={Ameya Daigavane and Song Eun Kim and Mario Geiger and Tess Smidt},
     booktitle={The Twelfth International Conference on Learning Representations},
     year={2024},
