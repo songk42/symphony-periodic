@@ -67,9 +67,3 @@ python -m symphony --config configs/perov5/e3schnet_and_nequip.py \
 
 For more extensive changes, directly edit the configuration files,
 or add your own.
-    author={Ameya Daigavane and Song Eun Kim and Mario Geiger and Tess Smidt},
-    booktitle={The Twelfth International Conference on Learning Representations},
-    year={2024},
-    url={https://openreview.net/forum?id=MIEnYtlGyv}
-}
-```
